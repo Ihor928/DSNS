@@ -1,0 +1,183 @@
+<!doctype html>
+<html lang="uk">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>ДСНС — UKRAINE GTA 03 Server</title>
+  <meta name="description" content="Офіційна сторінка підрозділу ДСНС на сервері UKRAINE GTA 03 — набір, події, техніка та правила роботи в грі.">
+  <style>
+    :root{--accent:#e23b2f;--dark:#0f1724;--muted:#6b7280;--card:#ffffff;--glass: rgba(255,255,255,0.06)}
+    *{box-sizing:border-box}
+    body{margin:0;font-family:Inter,Segoe UI,Roboto,Arial,sans-serif;background:linear-gradient(180deg,#071023 0%,#0b1320 100%);color:#e6eef8}
+    a{color:var(--accent);text-decoration:none}
+    header{display:flex;align-items:center;justify-content:space-between;padding:18px 28px;background:linear-gradient(90deg,rgba(255,255,255,0.02),transparent);backdrop-filter: blur(6px)}
+    .logo{display:flex;gap:12px;align-items:center}
+    .logo .mark{width:46px;height:46px;border-radius:8px;background:var(--accent);display:inline-grid;place-items:center;font-weight:700}
+    nav a{margin-left:18px;color:#dbeafe;font-weight:600}
+    .container{max-width:1100px;margin:28px auto;padding:0 20px}
+    .hero{display:grid;grid-template-columns:1fr 420px;gap:28px;align-items:center}
+    .card{background:linear-gradient(180deg,rgba(255,255,255,0.02),transparent);border-radius:12px;padding:20px}
+    h1{font-size:28px;margin:0 0 8px}
+    p.lead{color:var(--muted);margin-top:0}
+    .stats{display:flex;gap:12px;margin-top:14px}
+    .stat{background:var(--glass);padding:12px;border-radius:10px;width:120px;text-align:center}
+    .roles{display:flex;gap:12px;flex-wrap:wrap;margin-top:20px}
+    .role{background:#071428;padding:12px;border-radius:10px;min-width:160px}
+    .grid-3{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-top:18px}
+    .events ul{list-style:none;padding:0;margin:0}
+    .events li{padding:10px;border-radius:8px;background:rgba(255,255,255,0.02);margin-bottom:8px}
+    .gallery{display:grid;grid-template-columns:repeat(3,1fr);gap:8px;margin-top:12px}
+    .gallery img{width:100%;height:120px;object-fit:cover;border-radius:8px}
+    footer{padding:24px;text-align:center;color:var(--muted);font-size:14px;margin-top:28px}
+    form{display:grid;gap:8px}
+    input,textarea,select{padding:10px;border-radius:8px;border:1px solid rgba(255,255,255,0.05);background:transparent;color:inherit}
+    button{background:var(--accent);border:none;padding:10px 14px;border-radius:10px;color:white;font-weight:700;cursor:pointer}
+    @media (max-width:900px){.hero{grid-template-columns:1fr}.grid-3{grid-template-columns:1fr}.gallery{grid-template-columns:repeat(2,1fr)}header nav{display:none}}
+  </style>
+</head>
+<body>
+  <header>
+    <div class="logo">
+      <div class="mark">ДС</div>
+      <div>
+        <strong>ДСНС</strong><br>
+        <small style="color:var(--muted)">UKRAINE GTA 03 — In-game Rescue Service</small>
+      </div>
+    </div>
+    <nav>
+      <a href="#home">Головна</a>
+      <a href="#about">Про нас</a>
+      <a href="#events">Події</a>
+      <a href="#recruit">Набір</a>
+      <a href="#rules">Правила</a>
+    </nav>
+  </header>
+
+  <main class="container">
+    <section id="home" class="hero">
+      <div class="card">
+        <h1>Підрозділ ДСНС — UKRAINE GTA 03</h1>
+        <p class="lead">Офіційна сторінка ігрового підрозділу Державної служби з надзвичайних ситуацій на сервері UKRAINE GTA 03. Тут — інформація про ролі, техніку, поточні операції та як вступити.</p>
+        <div class="stats">
+          <div class="stat"><div style="font-size:20px;font-weight:800;color:#fff">42</div><div style="font-size:12px;color:var(--muted)">Активні рятівники</div></div>
+          <div class="stat"><div style="font-size:20px;font-weight:800;color:#fff">8</div><div style="font-size:12px;color:var(--muted)">Бригад</div></div>
+          <div class="stat"><div style="font-size:20px;font-weight:800;color:#fff">12</div><div style="font-size:12px;color:var(--muted)">Техніки</div></div>
+        </div>
+
+        <div class="roles">
+          <div class="role"><strong>Рятувальник</strong><div style="font-size:13px;color:var(--muted)">Основна роль — гасіння пожеж, порятунок гравців</div></div>
+          <div class="role"><strong>Водій техніки</strong><div style="font-size:13px;color:var(--muted)">Керує пожежними машинами та спецтехнікою</div></div>
+          <div class="role"><strong>Інспектор</strong><div style="font-size:13px;color:var(--muted)">Контроль дотримання правил і навчання нових співробітників</div></div>
+        </div>
+
+        <div style="margin-top:18px">
+          <a href="#recruit" class="button">Приєднатись до ДСНС</a>
+        </div>
+      </div>
+
+      <aside style="width:100%">
+        <div class="card">
+          <h3>Останні операції</h3>
+          <div class="events">
+            <ul>
+              <li><strong>08.08.2025 — Пожежа в порту</strong><div style="color:var(--muted);font-size:13px">Координація 3 бригад, евакуація 5 NPC</div></li>
+              <li><strong>03.08.2025 — Рятування з висоти</strong><div style="color:var(--muted);font-size:13px">Операція по зняттю гравця з моста</div></li>
+              <li><strong>31.07.2025 — Тренування водіїв</strong><div style="color:var(--muted);font-size:13px">День практики для новачків</div></li>
+            </ul>
+          </div>
+
+          <h4 style="margin-top:12px">Керівник підрозділу</h4>
+          <div style="display:flex;gap:10px;align-items:center;margin-top:8px">
+            <img src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?q=80&w=200&auto=format&fit=crop&ixlib=rb-4.0.3&s=placeholder" alt="leader" style="width:64px;height:64px;border-radius:10px;object-fit:cover">
+            <div>
+              <div style="font-weight:700">Капітан Сергій</div>
+              <div style="color:var(--muted);font-size:13px">Командир ДСНС — UKRAINE GTA 03</div>
+            </div>
+          </div>
+        </div>
+      </aside>
+    </section>
+
+    <section id="about" class="card" style="margin-top:18px">
+      <h2>Про підрозділ</h2>
+      <p class="lead">Наш підрозділ імітує роботу ДСНС: навчання, координація, ліквідація наслідків аварій та інцидентів у межах ігрового світу. Ми працюємо за правилами сервера та проводимо регулярні тренування для підвищення майстерності.</p>
+
+      <div class="grid-3" style="margin-top:12px">
+        <div class="card">
+          <h4>Техніка</h4>
+          <p style="color:var(--muted)">Пожежні автомобілі, авто рятувальників, квадроцикли та спецобладнання.</p>
+        </div>
+        <div class="card">
+          <h4>Навчання</h4>
+          <p style="color:var(--muted)">Щотижневі тренування, симуляції реальних інцидентів, курси водіння.</p>
+        </div>
+        <div class="card">
+          <h4>Співпраця</h4>
+          <p style="color:var(--muted)">Спільні заходи з поліцією та медичними підрозділами сервера.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="events" class="card" style="margin-top:18px">
+      <h2>Календар подій</h2>
+      <p class="lead">Ось найближчі івенти, які ми проводимо на сервері.</p>
+      <ul>
+        <li style="padding:10px;background:rgba(255,255,255,0.02);border-radius:8px;margin-bottom:8px"><strong>15.08.2025 — Масштабне тренування: Гасіння великої пожежі</strong><div style="color:var(--muted)">Збір: 20:00 за київським часом, місце: порт</div></li>
+        <li style="padding:10px;background:rgba(255,255,255,0.02);border-radius:8px;margin-bottom:8px"><strong>22.08.2025 — Курси водіння техніки</strong><div style="color:var(--muted)">Реєстрація обов'язкова</div></li>
+      </ul>
+    </section>
+
+    <section id="gallery" class="card" style="margin-top:18px">
+      <h2>Галерея</h2>
+      <div class="gallery">
+        <img src="https://images.unsplash.com/photo-1502784444185-1cf0e6b5e6b5?q=80&w=600&auto=format&fit=crop&ixlib=rb-4.0.3&s=placeholder" alt="scene1">
+        <img src="https://images.unsplash.com/photo-1526481280698-1c3b7f1a5f1d?q=80&w=600&auto=format&fit=crop&ixlib=rb-4.0.3&s=placeholder" alt="scene2">
+        <img src="https://images.unsplash.com/photo-1519681393784-d120267933ba?q=80&w=600&auto=format&fit=crop&ixlib=rb-4.0.3&s=placeholder" alt="scene3">
+        <img src="https://images.unsplash.com/photo-1533743983669-94fa1b6a6b2b?q=80&w=600&auto=format&fit=crop&ixlib=rb-4.0.3&s=placeholder" alt="scene4">
+        <img src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?q=80&w=600&auto=format&fit=crop&ixlib=rb-4.0.3&s=placeholder" alt="scene5">
+        <img src="https://images.unsplash.com/photo-1483729558449-99ef09a8c325?q=80&w=600&auto=format&fit=crop&ixlib=rb-4.0.3&s=placeholder" alt="scene6">
+      </div>
+    </section>
+
+    <section id="recruit" class="card" style="margin-top:18px">
+      <h2>Набір у підрозділ</h2>
+      <p class="lead">Хочеш стати рятівником на сервері? Заповни заявку і ми з тобою зв'яжемося.</p>
+      <!-- Простий контактний формуляр. Для повноцінної роботи замініть action на ваш серверний скрипт або webhook. -->
+      <form action="mailto:admin@example.com" method="post" enctype="text/plain">
+        <input type="text" name="name" placeholder="Ім'я в грі*" required>
+        <input type="text" name="age" placeholder="Вік в грі (опційно)">
+        <select name="role">
+          <option value="rescuer">Рятувальник</option>
+          <option value="driver">Водій техніки</option>
+          <option value="inspector">Інспектор</option>
+        </select>
+        <textarea name="about" rows="4" placeholder="Чому хочеш приєднатись?*"></textarea>
+        <button type="submit">Надіслати заявку</button>
+      </form>
+
+      <h4 style="margin-top:12px">Що потрібно знати перед вступом</h4>
+      <ul style="color:var(--muted)">
+        <li>Знати базові команди сервера.</li>
+        <li>Пройти співбесіду з інспектором.</li>
+        <li>Дотримуватись внутрішніх правил та ролеплею.</li>
+      </ul>
+    </section>
+
+    <section id="rules" class="card" style="margin-top:18px">
+      <h2>Правила підрозділу</h2>
+      <ol style="color:var(--muted)">
+        <li>Не порушувати правила сервера.</li>
+        <li>Підтримувати ланцюг командування під час операцій.</li>
+        <li>Поважати інших гравців і співробітників.</li>
+        <li>З'являтись на обов'язкові тренування або попереджати про відсутність.</li>
+      </ol>
+    </section>
+
+  </main>
+
+  <footer>
+    © 2025 ДСНС — UKRAINE GTA 03. Сторінка створена для ігрового співтовариства. Для змін або завантаження на сервер — зверніться до адміністратора.
+  </footer>
+
+</body>
+</html>
